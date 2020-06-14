@@ -33,7 +33,10 @@ body {
 .container .item-1 {
   align-items: center;
   text-align: center;
-  background: rgba(122,135,229,0.8);
+  background: url(bg-item-1.png) no-repeat bottom fixed;
+  background-color: #5A1FE5;
+  background-blend-mode: lighten;
+  color: white;
 }
 
 .container .item-1 * {
@@ -58,6 +61,7 @@ body {
 
 .container .item-2 * {
   margin: 7px 0;
+  text-align: center;
 }
 
 .container .item-2 input[type="text"], input[type="password"] {
@@ -66,6 +70,7 @@ body {
   border-radius: 50px;
   padding: 13px 35px;
   outline-width: 0;
+  box-shadow: 2px 7px 10px -2px rgba(0,0,0,0.49);
 }
 
 .container .item-2 img {
@@ -85,21 +90,21 @@ input[type=checkbox] {
   background-color: white;
   border-radius: 50%;
   vertical-align: middle;
-  border: 1.5px solid #7a87e5;
+  border: 1.5px solid #5A1FE5;
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
 }
 
 input[type=checkbox]:checked {
-  background-color: #7a87e5;
+  background-color: #5A1FE5;
   box-shadow: 0px 0px 0px 2.5px #fff inset;
 }
 
 .container .item-2 button {
   color: white;
   font-weight: 700;
-  background: #7a87e5;
+  background: #5A1FE5;
   box-shadow: 0px 0px 0px transparent;
   border: none;
   outline-width: 0;
@@ -107,10 +112,29 @@ input[type=checkbox]:checked {
   padding: 10px 15px;
   border-radius: 25px;
   transition: all 0.3s ease 0s;
+  box-shadow: 2px 7px 10px -2px rgba(0,0,0,0.49);
 }
 
 .container .item-2 button:hover {
-  background-color: #ee76f9;
+  background-color: #ba25ff;
+}
+
+.container .item-2 p {
+  margin-top: 18px;
+  font-size: 16px;
+  color: rgba(0,0,0,0.7);
+}
+
+.container .item-2 p a {
+  text-decoration: none;
+  color: #5A1FE5;
+  font-weight: 600;
+}
+
+.container .item-2 p a:hover {
+  text-decoration: none;
+  color: #ba25ff;
+  font-weight: 600;
 }
 
 /* Start of Media Query */
@@ -154,6 +178,8 @@ input[type=checkbox]:checked {
     font-size: 13px;
   }
 
+  .container .item-2 p {
+    font-size: 14px;
 }
 
 /* End of Media Query */
